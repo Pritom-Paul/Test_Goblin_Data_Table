@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  border-bottom: 2px solid #333; /* Change color and thickness as needed */
+}
+
+/* Customize the scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+  height: 6px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8d8d8d; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Roundness of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb when hovered */
+}
+
+::-webkit-scrollbar-track {
+  background: #131313; /* Color of the scrollbar track */
+  border-radius: 6px; /* Roundness of the scrollbar track */
+}
+
+/* For other browsers */
+body {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #8d8d8d #131313; /* Thumb and track colors */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* Specific Scrollbar styles for the table container */
+.table-container {
+  overflow-x: auto;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+  height: 6px; /* Height of the horizontal scrollbar */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #8d8d8d; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Roundness of the scrollbar thumb */
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb when hovered */
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #131313; /* Color of the scrollbar track */
+  border-radius: 6px; /* Roundness of the scrollbar track */
+}
+
+.table-container {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #8d8d8d #131313; 
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+}
+
